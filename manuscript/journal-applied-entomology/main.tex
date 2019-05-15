@@ -70,12 +70,18 @@ Please lay out your article using the section headings and example objects below
 Camila Enter information here:....
 
 
+\subsection{Analysis}
+
+Raw data from shape, size, and color trials were analyzed using linear models and analysis of variance.  Models were determined after consideration of all factor combinations and interactions and selected based on consideration of residual diagnostics (conformance to assumptions of normality and homoscedasticity), goodness of fit tests, $R^2$ values, information criteria, and leverage considerations. Based on these considerations, an outlier was detected and removed from the shape trials (P = 0.032, Bonferroni Outlier Test) and data from the size and color trials were square root transformed to conform with assumptions of normality and homoscedasticity.    
+
+Raw data from the Delia Lure Trial were analyzed with a paired t-test due to the nature of the experimental design.  Conformation to assumptions of normality were confirmed through examination of quantile-quantile plots.
+
+\subsection{Data Management}
+
+All data for the trials were entered into flat tabular (.csv) files.  All analysis on the raw data was conducted in R version 3.5.2 using RStudio as an IDE (with Vim keybindings) \citep{rcore2018,rstudio}.  The $tidyverse$, $car$, and $emmeans$ packages were used to facilitate analysis \citep{tidy, car, emmeans}.  All code, including manuscript documentation, is available on GitHub (https://github.com/acetworld/onion-maggot-attraction).
+
 \section{Results}
 
-
-\subsection{Data Management and Analysis}
-
-All data for the trials were entered into flat tabular (.csv) files.  All analysis on the raw data was conducted in R version 3.5.2 using RStudio as an IDE (with Vim keybindings) \citep{rcore2018,rstudio}.  The $tidyverse$, $car$, and $emmeans$ packages were used to facilitate analysis \citep{tidy, car, emmeans}.  All code, including manuscript documentation, is available on GitHub (https://github.com/acetworld/onion-maggot-attraction) 
 
 \section{Discussion}
 
