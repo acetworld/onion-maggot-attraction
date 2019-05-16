@@ -62,18 +62,27 @@ This is a generic template designed for use by multiple journals, which includes
 \end{abstract}
 
 \section{Introduction}
-Please lay out your article using the section headings and example objects below, and remember to delete all help text prior to submitting your article to the journal.
-
+Coming Soon...
 
 \section{Materials and Methods}
 
 To improve trap catch and monitoring of adult onion maggot fly, iterations of sticky traps of various shape, size, and color were evaluated in 2005 and 2006 in Upstate New York.  Additionally, after an improved shape, size, and color trap was developed, this trap was tested in conjunction with a Delia Lure attractant to evaluate potential improvement in trap catch.  
 
-All trials were conducted in commercial fields on muck soil near Elba, NY in western upstate New York (\textbf{GPS coordinates, other information about unique muck characteristics?}).  No modifications were done to commercial weed, disease, or pest management and spray programs (which closely followed recommended management \citep{reiners2011integrated}), the primary target of which is \textit{Thrips tabaci}.  This management is unlikely to affect \textit{D. antiqua} populations due to spray timing and minimal impacts of thrips sprays on onion maggot fly \citep{finch1986behavior}. 
+All shape, size, and color trials were conducted in commercial fields on muck soil near Elba, NY in western upstate New York (\textbf{GPS coordinates, other information about unique muck characteristics?}).  Trials evaluating trap catch in conjunction with Delia Lure were evaluated both in Elba, NY and on muck soil near Potter, NY in western upstate New York.  No modifications were done to commercial weed, disease, or pest management and spray programs (which closely followed recommended management \citep{reiners2011integrated}), the primary target of which is \textit{Thrips tabaci}.  This management is unlikely to affect \textit{D. antiqua} populations due to spray timing and minimal impacts of thrips sprays on onion maggot fly \citep{finch1986behavior}. 
 
-\subsection{Shape Trial}
+\subsection{Field Trials}
 
-To evaluate effect of trap shape on trap catch and monitoring of adult onion maggot fly, square, cube, short cylindrical, tall cylindrical, and spherical semi-gloss white shapes each with a surface area of 180 $cm^2$  were coated with sticky material (\textbf{Tanglefoot?}) and placed along the long edge of an onion (\textit{Allium cepa} L.) field near Elba, NY.  Traps were spaced 15.24 meters apart and arranged in a randomized control block design with five replications.  Traps were placed in the field in late May then collected in late June (\textbf{Not sure about this, more info needed?}).   
+\paragraph{Shape Trial} To evaluate effect of trap shape on trap catch and monitoring of adult onion maggot fly, square, cube, short cylindrical, tall cylindrical, and spherical semi-gloss white shapes each with a surface area of 180 $cm^2$  were coated with sticky material (\textbf{Tanglefoot?}) and placed along the long edge of an onion (\textit{Allium cepa} L.) field near Elba, NY.  Traps were spaced 15.24 meters apart and arranged in a randomized control block design with five replications.  Traps were placed in the field in late May then collected in late June (\textbf{Not sure about this, more info needed?}).   
+
+\paragraph{Size Trial}
+To evaluate the influence of trap size on the trap catch and monitoring of adult onion maggot fly, white spherical sticky traps with diameters of 5.00, 6.25, 7.50, 8.75, and 10.00 cm diameter were placed along the long edge of onion fields with spacing 15.24 meters apart in a randomized controlled block design with five replications.  
+
+\paragraph{Color Trial}
+To evaluate the effect of color on trap catch and monitoring of adult onion maggot fly, white, yellow, green, and red spherical sticky traps 8.75 cm in diameter were placed along the long edge of onion fields in a randomized controlled block design with five replications.  
+
+\paragraph{Delia Lure Trial}
+To evaluate the effect of adding an attractant an trap catch and monitoring of adult onion maggot flies, white spherical sticky traps 8.75 cm in diameter were placed at the edge of onion fields in a paired design where half of the traps received a Delia Lure (Baited) and the other half did not (Unbaited).  Trap Catch was monitored three times throughout the season and four replications of each treatment were conducted in each location.  
+
 
 \subsection{Analysis}
 
@@ -88,7 +97,38 @@ All data for the trials were entered into flat tabular (.csv) files.  All analys
 \section{Results}
 
 
-\section{Discussion}
+\paragraph{Shape Trial} Models relating trap shape and \textit{D. antiqua} sex to trap catch significantly explained approximately 70\% of observed variation (P \textless 0.001, $R^2_{adj}$ = 0.70, Table \ref{table:1}).  Trap shape significantly influenced (P = 0.005) catch of adult \textit{D. antiqua} (Figure \ref{fig:figure1}).  Sticky traps caught approximately 27.81 $\pm$ 2.8 more female flies than male flies.  Short cylindrical traps outperformed square panel and tall cylinder traps in terms of female trap catch.  No significant differences were observed between male trap catch.  
+
+\begin{table}[]
+\caption{Linear model and analysis of variance results and diagnostics for shape, size, and color trials.  Treatment refers to the factor under evaluation. For the shape trial, treatment denotes shape; for the size trial, treatment denotes size; for the color trial, treatment denotes color.  Missing values indicate that factor was not included in the best fit model.  All code and additional documentation is available on GitHub.  }
+\begin{tabular}{lrrrrrrrrr}
+              & \multicolumn{9}{c}{Trial}                                                                                                                                                                                                \\ \cline{2-10} 
+              & \multicolumn{3}{c}{Shape}                                              & \multicolumn{3}{c}{Size}                                               & \multicolumn{3}{c}{Color}                                              \\
+              & \multicolumn{1}{c}{F} & \multicolumn{1}{c}{df} & \multicolumn{1}{c}{P} & \multicolumn{1}{c}{F} & \multicolumn{1}{c}{df} & \multicolumn{1}{c}{P} & \multicolumn{1}{c}{F} & \multicolumn{1}{c}{df} & \multicolumn{1}{c}{P} \\ \cline{2-10}
+Sex           & 42                    & 1                      & \textless 0.0001      & 197.5                 & 1                      & \textless 0.0001      & 37.2                  & 1                      & \textless 0.0001      \\
+Treatment     & 4.4                   & 4                      & 0.005                 & 11.6                  & 4                      & \textless 0.0001      & 31.3                  & 3                      & \textless 0.0001      \\
+Year          &                       &                        &                       & 142.4                 & 1                      & \textless 0.0001      &                       &                        &                       \\
+Sex:Treatment &                       &                        &                       &                       &                        &                       & 6.3                   & 3                      & 0.002                 \\
+Sex:Year      &                       &                        &                       & 137.9                 & 1                      & \textless 0.0001      &                       &                        &                       \\ \cline{2-10} 
+              &                       &                        &                       &                       &                        &                       &                       &                        &                       \\
+$R^2$            &                       &                        & 0.75                  &                       &                        & 0.75                  &                       &                        & 0.83                  \\
+$R^2_{adj}$         &                       &                        & 0.70                  &                       &                        & 0.73                  &                       &                        & 0.79                  \\
+P             &                       &                        & \textless 0.0001      &                       &                        & \textless 0.0001      &                       &                        & \textless 0.0001     
+\end{tabular}
+\label{table:1}
+\end{table}
+
+
+
+\paragraph{Size Trial} Models using size, sex, and year to explain observed trap catch significantly explained approximately 73\% of the observed variation (P \textless 0.001, $R^2_{adj}$ = 0.73, Table \ref{table:1}).  Trap size significantly influenced trap catch (P \textless 0.001).  Increasing diameter of trap size showed a trend towards increasing trap catch (Figure \ref{fig:figure2}) with the largest trap catching significantly more females and males.
+
+
+\paragraph{Color Trial} Models using color and sex to explain observed trap catch significantly explained approximately 79\% of the observed variation (P \textless 0.001, $R^2_{adj}$ = 0.79, Table \ref{table:1}). Color significantly influenced trap catch (P \textless 0.001) with white traps catching significantly more females than any other color (t \textless -3.1, df = 32, P \textless 0.012) and significantly more males than any other color except yellow (t \textless -3.1, df = 32, P \textless 0.012, Yellow: t = -1.6, df = 32, P = 0.3).  White traps caught significantly more females than males (t = 6.1, df = 32, P \textless 0.001).
+
+\paragraph{Delia Lure Trial} Traps baited with Delia Lure caught approximately 51.3 (95\% CI: 7.3-95.4) more adult flies than traps without the Delia Lure bait (t = 3.0, df = 5, P = 0.03).
+
+
+
 
 \begin{figure}[bt]
 \centering
@@ -120,73 +160,7 @@ All data for the trials were entered into flat tabular (.csv) files.  All analys
 \end{figure}
 
 
-
-\subsection{Second Level Heading}
-If data, scripts or other artefacts used to generate the analyses presented in the article are available via a publicly available data repository, please include a reference to the location of the material within the article.
-
-% Equations should be inserted using standard LaTeX equation and eqnarray environments, not as graphics, and should be set in the main text
-This is an equation, numbered
-\begin{equation}
-\int_0^{+\infty}e^{-x^2}dx=\frac{\sqrt{\pi}}{2}
-\end{equation}
-And one that is not numbered
-\begin{equation*}
-e^{i\pi}=-1
-\end{equation*}
-
-\subsection{Adding Citations and a References List}
-
-Please use a \verb|.bib| file to store your references. When using Overleaf to prepare your manuscript, you can upload a \verb|.bib| file or import your Mendeley, CiteULike or Zotero library directly as a \verb|.bib| file\footnote{see \url{https://www.overleaf.com/blog/184}}. You can then cite entries from it, like this: \cite{lees2010theoretical}. Just remember to specify a bibliography style, as well as the filename of the \verb|.bib|.
-
-You can find a video tutorial here to learn more about BibTeX: \url{https://www.overleaf.com/help/97-how-to-include-a-bibliography-using-bibtex}.
-
-This template provides two options for the citation and reference list style: 
-\begin{description}
-\item[Numerical style] Use \verb|\documentclass[...,num-refs]{wiley-article}|
-\item[Author-year style] Use \verb|\documentclass[...,alpha-refs]{wiley-article}|
-\end{description}
-
-\subsubsection{Third Level Heading}
-Supporting information will be included with the published article. For submission any supporting information should be supplied as separate files but referred to in the text.
-
-Appendices will be published after the references. For submission they should be supplied as separate files but referred to in the text.
-
-\paragraph{Fourth Level Heading}
-% Here are examples of quotes and epigraphs.
-\begin{quote}
-The significant problems we have cannot be solved at the same level of thinking with which we created them.\endnote{Albert Einstein said this.}
-\end{quote}
-
-\begin{epigraph}{Albert Einstein}
-Anyone who has never made a mistake has never tried anything new.
-\end{epigraph}
-
-\subparagraph{Fifth level heading}
-Measurements should be given in SI or SI-derived units.
-Chemical substances should be referred to by the generic name only. Trade names should not be used. Drugs should be referred to by their generic names. If proprietary drugs have been used in the study, refer to these by their generic name, mentioning the proprietary name, and the name and location of the manufacturer, in parentheses.
-
-\begin{table}[bt]
-\caption{This is a table. Tables should be self-contained and complement, but not duplicate, information contained in the text. They should be not be provided as images. Legends should be concise but comprehensive – the table, legend and footnotes must be understandable without reference to the text. All abbreviations must be defined in footnotes.}
-\begin{threeparttable}
-\begin{tabular}{lccrr}
-\headrow
-\thead{Variables} & \thead{JKL ($\boldsymbol{n=30}$)} & \thead{Control ($\boldsymbol{n=40}$)} & \thead{MN} & \thead{$\boldsymbol t$ (68)}\\
-Age at testing & 38 & 58 & 504.48 & 58 ms\\
-Age at testing & 38 & 58 & 504.48 & 58 ms\\
-Age at testing & 38 & 58 & 504.48 & 58 ms\\
-Age at testing & 38 & 58 & 504.48 & 58 ms\\
-\hiderowcolors
-stop alternating row colors from here onwards\\
-Age at testing & 38 & 58 & 504.48 & 58 ms\\
-Age at testing & 38 & 58 & 504.48 & 58 ms\\
-\hline  % Please only put a hline at the end of the table
-\end{tabular}
-
-\begin{tablenotes}
-\item JKL, just keep laughing; MN, merry noise.
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+\section{Discussion}
 
 \section*{Acknowledgements}
 Acknowledgements should include contributions from anyone who does not meet the criteria for authorship (for example, to recognize contributions from people who provided technical help, collation of data, writing assistance, acquisition of funding, or a department chairperson who provided general support), as well as any funding or other support information.
@@ -201,13 +175,7 @@ You may be asked to provide a conflict of interest statement during the submissi
 \printendnotes
 
 % Submissions are not required to reflect the precise reference formatting of the journal (use of italics, bold etc.), however it is important that all key elements of each reference are included.
-\bibliography{sample}
 
-\begin{biography}[example-image-1x1]{A.~One}
-Please check with the journal's author guidelines whether author biographies are required. They are usually only included for review-type articles, and typically require photos and brief biographies (up to 75 words) for each author.
-\bigskip
-\bigskip
-\end{biography}
 
 \graphicalabstract{example-image-1x1}{Please check the journal's author guildines for whether a graphical abstract, key points, new findings, or other items are required for display in the Table of Contents.}
 
