@@ -89,18 +89,23 @@ emmeans(size_mod_transform, ~ sex + size, type = 'response') %>%
 # generate contrasts
 size_means <- emmeans(size_mod_transform, ~ sex + size, type = 'response') %>%
     CLD(Letters = LETTERS, reversed = TRUE) %>% 
-    data.frame()
+    data.frame() %>%
+    mutate(.group = str_trim(.group))
 
 # Figure generation
-size_figure <- ggplot(size_means, aes(x = size, y = response, color = sex)) + 
-    geom_point(position = position_dodge(0.48)) + 
+size_figure <- ggplot(size_means, aes(x = size, y = response, 
+                                      color = sex, shape = sex)) + 
+    geom_point(position = position_dodge(0.48),
+               size = 2) + 
     geom_errorbar(aes(x = size, ymin = lower.CL, ymax = upper.CL),
                   position = position_dodge(0.48),
-                  width = 0.24) + 
-    geom_text(aes(x = size, y = upper.CL + 3, label = .group),
+                  width = 0.48) + 
+    geom_text(aes(x = size, y = upper.CL + 2, label = .group),
               position = position_dodge(0.48),
               show.legend = FALSE) + 
-    scale_color_grey(labels = c('Females', 'Males')) + 
+    scale_color_manual(values = c('black', 'grey50'),
+                       labels = c('Females','Males')) + 
+    scale_shape_manual(values = c(17, 19), labels = c('Females', 'Males')) + 
     labs(x = 'Trap Sphere Diameter (cm)', y = 'Onion Maggot Fly Adults') + 
     applied_entomology_theme
 

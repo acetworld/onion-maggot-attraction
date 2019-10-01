@@ -74,18 +74,23 @@ jitter_width = 0.12
 set.seed(72)
 
 # generate figure
-color_trial_figure <- ggplot(color_trial_treatment, aes(x = color, y = flies, color = sex)) + 
+color_trial_figure <- ggplot(color_trial_treatment, 
+                             aes(x = color, y = flies, 
+                                 color = sex,
+                                 shape = sex)) + 
     stat_summary(fun.data = 'mean_cl_boot', 
                  geom = 'errorbar',
                  position = position_dodge(dodge_width),
-                 width = dodge_width/2) +
+                 width = dodge_width) +
     stat_summary(fun.data = 'mean_cl_boot',
-                 geom = 'point',
+                 geom = 'point', size = 2, 
                  position = position_dodge(dodge_width)) +
     geom_point(position = position_jitterdodge(dodge.width = dodge_width,
                                                jitter.width = jitter_width),
                alpha = 0.48) + 
-    scale_color_grey(labels = c('Females','Males')) + 
+    scale_color_manual(values = c('black', 'grey50'),
+                       labels = c('Females','Males')) + 
+    scale_shape_manual(values = c(17, 19), labels = c('Females', 'Males')) + 
     labs(x = 'Trap Color', y = 'Onion Maggot Fly Adults') +
     applied_entomology_theme 
 
