@@ -426,7 +426,7 @@
     \@presentaddress\par
   \fi%
   \vskip10pt%
-  \textbf{Funding information}\\
+  \textbf{}\\
   \@fundinginfo\par
   \ifdefempty{\@papereditor}{}
   {\vskip10pt Editor: \@papereditor\par}
