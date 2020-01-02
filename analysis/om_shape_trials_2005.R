@@ -67,7 +67,10 @@ model_diagnostics(shape_mod_xoutlier, to_plot = FALSE)
 emmeans(shape_mod_xoutlier, ~sex ) %>% contrast(method = 'tukey')
 
 emmeans(shape_mod_xoutlier, ~sex*treatment_shape) %>% 
-    cld(by = 'sex')
+    CLD(by = 'sex')
+
+emmeans(shape_mod_xoutlier, ~ sex * treatment_shape) %>% 
+    contrast(by = 'sex', method = 'trt.vs.ctrl')
 
 stat_labels <- emmeans(shape_mod_xoutlier, ~sex*treatment_shape) %>% 
     cld(by = 'sex') %>% data.frame() %>% 
