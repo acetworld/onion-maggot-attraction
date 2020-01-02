@@ -8,6 +8,12 @@
 \usepackage{ragged2e}
 \usepackage{scrextend}
 \usepackage{lastpage}
+\usepackage{geometry}
+ \geometry{
+ left = 1.5in,
+ right = 1.5in,
+ top = 1in
+ }
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \rhead{\includegraphics[height= 1cm]{ento1.png}\vspace{1em}}
@@ -21,12 +27,15 @@
 \titleformat{\section}{\normalfont\fontsize{10}{15}\bfseries}{\thesection}{0em}{}
 \titlespacing{\section}{}{1.24em}{0.24em}
  
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+
  
 \cfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 
 \begin{document}
 
-\begin{addmargin}[2.8in]{}
+\begin{addmargin}[3.8in]{}
 Willett, Filgueiras, \newline
 Nyrop and Nault \newline
 ----------------------------- \newline
@@ -81,51 +90,169 @@ Brian A. Nault
 
 \setlength\parindent{0pt}
 
-\subsection*{Reviewer 1 (Remarks to the Author)}
+\subsection*{Reviewer 1}
 
-You spend a lot of time talking about relative tolerance of the bermudagrass lines to sting nematode. However, I was never very clear on how you are defining tolerance or how this was determined.
+Well-written paper.  I feel the research is new, important and relevant to the industry.  The methods and statistical analysis are appropriate.  I agree with the reported results; a few of the discussion points seem to go a little too far from the scope of research and are not supported with data or referenced material.   
 
 \begin{quote}
-    \textit{This is an excellent question.  We have taken the opportunity to elaborate on this in the introduction.  In short, tolerance in bermudagrass is determined if there was no reduction in root length or had greater root length than ‘Tifway’ despite \textit{B. longicaudatus} infection.  Tolerance of the varieties had been established in previous work by Pang et al. 2011, citations 23, and 24 in the manuscript.  } 
+    \textit{Thank you for reviewing the paper.  We appreciate your comments and concise summary.  We've adjusted the language in accordance with your suggestions and refined discussion points to not expand beyond the scope of research.  }
 \end{quote}
 
-On page 2 under Bermudagrass response to sting nematode feeding...I think you should use the term nematode population densities instead of "nematode densities" or "differences in nematode population."
+One concern is it appears some of the studies may not have been replicated in space or time.  It is stated trials were conducted in 2005 and 2006 but some studies only have 4-5 raw data points and no reported year effects in Table 1.  Please clarify which studies were replicated in space and time.   Below are comments referenced by line number.
 
 \begin{quote}
-    \textit{Thanks for pointing this out.  We have adjusted the language in that section in accordance with your suggestions.} 
-\end{quote}
-
-Very well written and very interesting paper
-
-\begin{quote}
-    \textit{Thank you for your interest and constructive feedback.}
+    \textit{Thanks for your inquiry.  All trials were replicated in space.  Not all trials had year effects; size trials were replicated across years.  It should be noted that the trials were iterative in the sense that improvement decisions were made and incorporated into subsequent trials.  }
 \end{quote}
 
 
-\subsection*{Reviewer #2 (Technical Comments to the Author)}
-
-This is a well researched study and the manuscript well structured and written. The methods used are scientifically sound, results appropriately interpreted and discussed. Except for a few minor comments below, I recommend publication of this manuscript.
+Line 10-12- Consider revising sentence.  Current cultural management especially altering planting date, field location, and crop rotation depend on monitoring.
 
 \begin{quote}
-    \textit{Thank you for your feedback.  We appreciate the interest and comments below.}
+    \textit{Thanks for suggesting this.  We have included your suggestions in the updated version of the paper.  }
 \end{quote}
 
-Line 58. The authors stated that the canonical correspondence analysis explained 42\% of the observed inertia in the total metabolome. I suggest that the authors explain this because in Figure 2 this analysis explained 71.9\% of the total metabolome variation (CCA1: 45.3\% + CCA2: 26.6\%).
+Line 75-76- Were all studies conducted in 2005 and 2006 or just some trials? Please clarify.
+
 
 \begin{quote}
-  \textit{Thanks for your inquiry.  Canonical correspondence analysis did explain 42\% of the observed inertia.  Of that 42\% explained inertia, axis 1 explained 45.3\% and axis 2 26.6\%.  Summing the explained variation of the other 3 axis with the first two would result in 100\% of the variation captured in canonical ordination or 42\% of observed inertia (constrained $\chi^2$) in the total metabolome. This explanation has been elaborated upon in the text.   } 
+    \textit{Thanks for your inquiry - please see comments above.}
 \end{quote}
 
-Lines 146 and 150. Change ‘conetainers’ to ‘containers and container’
+Line 88-90- It would be helpful to know what insecticides were applied to the fields during the monitoring period (Late May to Late June) if information is available?
 
 \begin{quote}
-    \textit{Thanks for suggesting this. Conetainers should be Cone-tainers to refer to the specific type of container used to house the plants.  We have clarified this in the Methods section adding both information about the company from which they can be procured and changing the spelling in lines 148 and 150 for clarification.  }
+    \textit{Great question - The management program almost identically followed the proposals put forth by Reiners et al., 2019. } 
 \end{quote}
 
-I suggest that instead of putting in the appendix, the package names used for their statistical analysis, the authors should include these names in the text to educate readers, especially for those not familiar with the ‘R software’
+Line 106- Why wasn't blue used in the study if other studies indicated it attracted \textit{D. antiqua} flies.
 
 \begin{quote}
-    \textit{Thanks for your suggestion.  This is a good idea; we have incorporated names of the software packages in the main body of the text.}
+    \textit{Excellent question - blue wasn't used in this trial because we simply did not imagine that blue would be an attractive color.  The results suggesting that blue could be attractive were published in 2018 - well after we completed this study.  It should be noted that there could be a trade off with use of blue traps however.  While specificity for onion maggot seems higher on blue traps, overall catch numbers suffer. 
+    }
+\end{quote}
+
+Line 138- Is it necessary to spell out P-values and R2 values when cited in Table 1 for all result sections.  Recommend either referring to Table 1 and leaving out text.
+
+
+\begin{quote}
+    \textit{Thanks for your suggestion.  We've removed the redundancy and just cited Table 1 in the text.  }
+\end{quote}
+
+
+Line 143- "short cylinders numerically caught "X" more females  then cubes and spheres.  
+
+\begin{quote}
+    \textit{Excellent suggestion.  We've added this additional information in the text.}
+\end{quote}
+
+Line 145- This is probably outside the scope of the study but did the larger trap sizes also correspond to capture of more non-target insects?  Did larger traps require additional support to prevent movement in wind?
+
+\begin{quote}
+    \textit{Great questions.  While this is somewhat outside the scope of the paper, larger sizes had more insects, but we did not look into quantifying non-targets.  Larger traps did not require much in the form of additional supports for the wind.  The only challenging part of supporting traps was actually the deer population.  At one of our sites, particularly hungry deer devoured our spheres. Must have been pretty hungry put up with the taste.  }
+\end{quote}
+
+Line 185- Again, why wasn't blue tested in the study?
+
+\begin{quote}
+    \textit{Excellent question.  See previous response}
+\end{quote}
+
+Line 202- change "has reduced"
+
+\begin{quote}
+    \textit{Thanks for catching this typo.  We have corrected it in the updated version of the manuscript.}
+\end{quote}
+
+
+Line 210-212- This statement is not supported by data nor referenced materials.  The number of flies captured in all treatments is small.  It seems unlikely the number of captured adults even with several traps per field would reduced the overall population enough to influence maggot damage.  It might be worth citing research investigating insecticide applications targeting adults used in combination with trapping and how they influence onion maggot fly populations and onion maggot damage to provide context to other statements in the final paragraph. 
+
+\begin{quote}
+    \textit{Good point.  We may have gotten ahead of ourselves in discussing future work and upcoming results.  This will have to wait for the next manuscript.  We have adjusted the language towards the end of the discussion to capture the results of the paper and better rely on current literature support.  }
+\end{quote}
+
+\subsection*{Reviewer 2}
+
+The authors report on field tests, using different types of traps (shape, colour, baits) aiming at improving catches of onion flies. While I don’t question the importance of improving a trap design to base control measures on the occurrence of these flies in the onion fields I doubt that the authors would be able to contribute to phenological modelling approaches by using these data. No information is provided on the background populations of onion flies in these fields or the damage levels. The authors state that improved traps create the “opportunity for a different, more environmentally friendly, management method”.  Overall, the discussion section is only marginally developed and there are many additional opportunities to refer and discuss studies on maggot flies, carrot flies, or cabbage flies. The whole section on the Attract & Kill approach is not reflecting the state of the art discussion.
+
+\begin{quote}
+    \textit{Thank you for your concise summary and for reviewing the paper.  We appreciate your comments and have endeavored to incorporate your suggestions in the revised manuscript.  We have elaborated upon work on other flies and have removed discussion of the Attract and Kill approach while focusing on its contribution to an integrated pest management approach.  }
+\end{quote}
+
+Misc.:
+25 correct citations throughout the MS: Nault, Straub….-  not B. A. Nault….
+
+\begin{quote}
+    \textit{Thank you for pointing this out.  The citations in the version rendered in Word turned out a bit odd.  The citations are correct in the LaTeX version assembled using the JAE template that will be used for publication. }
+\end{quote}
+
+29 would be interesting for the reader to learn details about which compounds are involved
+
+\begin{quote}
+    \textit{Thanks for your suggestion.  Details about developing resistance are elaborated upon in the cited papers. }
+\end{quote}
+
+37 … generations and plant pathogens
+
+\begin{quote}
+    \textit{Thanks for the opportunity to clarify.  This has been updated in the revised version of the paper.  }
+\end{quote}
+
+49 give reason why insecticide application is not desired – organic production?
+
+\begin{quote}
+    \textit{Excellent suggestion to clarify.  It has been adjusted in the revised version of the manuscript. }
+\end{quote}
+
+63 (and 70, 182, 186, 299) is this report accessible to readers? Guess not; thus it should not be cited;
+
+\begin{quote}
+    \textit{Thanks for your inquiry.  This report is accessible to readers and the general public; it is not behind a pay wall.  For some reason, Word rendered the formatting wrong.  The LaTeX version with the JAE template has the full information including an accessible url for public perusal.  }
+\end{quote}
+
+76 why data from 2005 and 2006; seems a bit outdated!
+
+\begin{quote}
+    \textit{Excellent question.  While the trials were conducted in 2005 and 2006, renewed interest in alternative management options for onion maggot in New York has prompted us to put together this paper. We feel this is useful information that serves as a base for future work in the pipeline documenting effective onion maggot management using the trap development documented here.  }
+\end{quote}
+
+80ff the layout of the traps within the fields is not sufficiently outlined in detail. The position of the traps was most probably within the fields; however, adjacent fields and the incidence of surrounding onion field may have had an influence on trap catches as well. What about wind direction? Do onion flies have rendezvous-places (at least known from Delia platura)?  What means “long edge of an onion … field”?  
+\begin{quote}
+    \textit{Thanks for your suggestion.  We have elaborated on trap location to some extent in the text.  GPS coordinates of trap locations are also available upon request.  We did not control for nor record wind direction.  \textit{D. antiqua} does have rendezvous places; catch seems to be higher along edges of fields hence the trap placement.  The onion fields are rectangular with the long edge being the longer of the pairs of sides.  }
+\end{quote}
+
+
+92 Why were traps placed at a distance of 15.2 m? Sounds a bit odd! Has this distance been evaluated for interactions? How did time influence trap catches; seems that the traps were exposed for 4 weeks; any differences in trap dynamics for the different types tested? 
+
+\begin{quote}
+    \textit{Excellent question.  Because our growers work with standard measurements, 50 feet (the 15.2m equivalent) divides up the field nicely and uniformly.  This distance was additionally chosen because we believe that it is much larger than would cause interactions.  We did not see much variation in trap dynamics over time for the designs tested.  
+    }
+\end{quote}
+
+
+152 what is meant with trend? This is not a statistically resilient term – significant or not significant!
+
+\begin{quote}
+    \textit{Excellent question.  This is actually a statistical term and there are numerous types of trend analysis.  In linear trend analysis (the case here) trend is essentially slope and can be fitted using the least squares method.  In analysis with sizes, diameter can be treated as either a categorical (the case in our paper) or continuous variable.  In the continuous case, the trend would be the slope of the relationship between size and trap catch and the coefficient of this term in the linear model.  Trends were similar in our studies because as trap sphere diameter increased, trap catch also increased for both males and females.  This is an important applied point because there seems to be little difference between the sexes.  We did not dive further into trend analysis nor pursue the continuous analysis approach because we felt that display of the categorical approach would be more intuitive for management professionals and because identification of the scaling factor for continuity would require further research to disentangle which is more important: diameter, volume, or surface area.  
+    }
+\end{quote}
+
+
+204 I doubt that a mass trapping approach would result in control of these flies. Flies may be attracted to these traps from adjacent fields or landscapes, thus high trap catches may not reflect the real population densities. Are data available which clearly demonstrate that increasing catches in one field reduce onion damage?
+
+\begin{quote}
+    \textit{Great question.  This point also relates to your inquiry regarding the relevance of publishing data from 2005 and 2006.  More recent work using the results related report on the efficacy of using this approach to reduce onion damage in the field.  }
+\end{quote}
+
+Figures: It is a bit strange that the CVs of the males are always much lower than those of the females – this should be discussed. Are females better dispersers? Do the traps attract males or do males seek for females?
+
+\begin{quote}
+    \textit{Thanks for your inquiry.  The male catch is always less than females.  We have elaborated upon this in the discussion.  }
+\end{quote}
+
+Figures 4: Delia Lure trials have been made 3 times with 4 reps per treatment; however, the figures shows 6 symbols – please explain why 6 and which are solid and shaded points – not visible in the PDF file
+
+\begin{quote}
+    \textit{Thanks for mentioning this.  We have clarified in the figure description.  In this case the points are not the raw values (text copied from previous figures), but rather replicate totals.  Your math is correct with the additional consideration that this trial was conducted in two fields bringing the grand total to 3x4x2 = 24.  }
 \end{quote}
 
 \end{document}
